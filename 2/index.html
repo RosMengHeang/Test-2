@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="kit (1).webp" alt="logo" class="logo">
+        <nav>
+            <i class="fa-solid fa-bars"></i>
+            <ul class="nav_mid">
+                <li><a href="#">Why KIT ?</a></li>
+                <li><a href="#">Admission</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Internship Program</a></li>
+                <li><a href="#">Campus Life</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">News/Blog</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Register Now</button></a>
+    </header>
+    <div>
+        <h1 style="text-align: center;">Job Application Form</h1>
+    </div>
+    <div class="full-form">
+        <div>
+        <form class="form">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name">
+            <br><br>
+            <label for="gender">Gender</label><br>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="nth">Prefer not To Say</option>
+            </select>
+            <br><br>
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" id="dob" name="dob">
+            <br><br>
+            <label for="ph-number">Phone Number</label><br>
+            <input type="tel" id="ph-number" name="ph-number">
+            <br><br>
+            <label for="yoe">Year of Experience</label><br>
+            <input type="number" id="yoe" name="yoe">
+            <br><br>
+            <label for="role">Role</label><br>
+            <select id="role" name="role">
+                <option value="java">Java Programming</option>
+                <option value="python">Python Programming</option>
+                <option value="c++">C++ Programming</option>
+                <option value="fullstack">FullStack Development</option>
+                <option value="dsa">Data Structure & Algorithm</option>
+            </select>
+            <br><br>
+            <label for="cv">Upload Your Resume</label><br>
+            <input type="file" id="cv" name="cv">
+            <br><br>
+            <label for="interview">Booking Interview</label><br>
+            <input type="date" id="interview" name="interview">
+            <button class="Submit" type="button" onclick="submitForm()">Submit</button>
+        </form>
+        <div id="JobConfirmation" class="hidden">
+            <h2 style="text-align: center;">Jobs Confirmation</h2>
+            <p><strong>Name:</strong> <span id="confirmationName"></span></p>
+            <p><strong>Gender:</strong> <span id="confirmationGender"></span></p>
+            <p><strong>Date of Birth:</strong> <span id="confirmationdob"></span></p>
+            <p><strong>Phone Number:</strong> <span id="confirmationph-number"></span></p>
+            <p><strong>Years of Experience:</strong> <span id="confirmationyoe"></span></p>
+            <p><strong>Role:</strong> <span id="confirmationrole"></span></p>
+            <p><strong>CV:</strong> <span id="confirmationcv"></span></p>
+            <p><strong>Interview on:</strong> <span id="confirmationinterview"></span></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

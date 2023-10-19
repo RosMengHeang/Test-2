@@ -1,0 +1,54 @@
+body {
+    background: red;
+    height: 100vh;
+}
+
+h1 {
+    animation-name: letter;
+    animation-duration: 3s;
+    position: relative;
+}
+
+@keyframes letter {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.box {
+    width: 10rem;
+    height: 10rem;
+    background-color: #f0ab8d;
+    display: inline-block;
+    position: relative;
+    top: 35%;
+    left: 35%;
+    animation-iteration-count: infinite;
+    animation-name: example;
+    animation-duration: 2s;
+    margin: 2rem;
+}
+.box h1 {
+    text-align: center;
+}
+
+@keyframes example {
+    from {
+        transform: rotate(0);
+      }
+    
+      to {
+        transform: rotate(360deg);
+      } 
+}
+
+@media (max-width: 687px) {
+    body {
+        background: rgb(139, 84, 84);
+    }
+}

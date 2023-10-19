@@ -1,0 +1,31 @@
+Create an array of numbers 
+let numbers = [1, 2, 3, 4, 5];
+
+Add another number to end of array
+numbers.push(6); 
+
+Add a number to beginning of array
+numbers.unshift(0);
+
+Remove last element from array
+numbers.pop(); 
+
+Get index of an element
+let index = numbers.indexOf(3);
+
+Remove element by index
+numbers.splice(index, 1);
+
+Copy portion of an array
+let sliced = numbers.slice(2, 4); 
+
+Reverse the array
+numbers.reverse();  
+
+Join all elements into a string  
+let str = numbers.join('-');
+
+Loop over array and print elements
+numbers.forEach(n => {
+  console.log(n); 
+});

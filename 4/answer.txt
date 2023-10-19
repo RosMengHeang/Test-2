@@ -1,0 +1,23 @@
+A web server and web client are key components in designing and serving web pages to users. Here is an explanation of their features and necessity with an example:
+
+Web Server
+
+A web server is responsible for hosting websites and serving requested web pages to clients. Some key features:
+
+Static Content Hosting - The server stores and serves static files like HTML, CSS, JS, images, etc.
+Dynamic Application Logic - For dynamic sites, the server runs application code to generate web pages on the fly based on data.
+APIs and Microservices - The server provides APIs and microservices that clients can use to fetch data and utilize backend functionality.
+Database Connectivity - The server provides access to databases to store and retrieve data for web apps.
+Security - Handles HTTPS, access control, rate limiting, etc. to secure the application and infrastructure.
+Web Client
+
+The web client refers primarily to the web browser that requests pages from the server and renders them:
+
+Sending Requests - Clients issue HTTP requests to the server for static assets and dynamic data.
+Rendering Content - Browsers parse HTML, CSS and render the web page for the user.
+Executing JavaScript - Client-side JS adds interactivity and dynamic effects to pages.
+Managing Sessions - Cookies store session data across requests to track logged in users.
+Caching - Browsers cache common assets like images and JS files for faster load times.
+Example
+
+Consider a simple portfolio website - the server hosts the HTML, CSS and images for the portfolio. When a browser requests the page, the server returns the static assets. The browser then parses these files to render the page. The site may also have a contact form that submits to a server endpoint to send emails. This requires server-side code to handle the form data and send emails dynamically.
